@@ -127,7 +127,7 @@ typedef struct {
     //7.设置视口
     glViewport(0, 0, self.drawableWidth, self.drawableHeight);
     
-    //8.设置顶点缓存区
+    //8.设置顶点缓存区,加载顶点数据
     GLuint vertexBuffer;
     glGenBuffers(1, &vertexBuffer);
     glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);

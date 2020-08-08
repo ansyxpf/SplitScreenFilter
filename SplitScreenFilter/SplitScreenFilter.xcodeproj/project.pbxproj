@@ -114,12 +114,12 @@
 		1EEAD28C24DE913200C24E39 /* Filter */ = {
 			isa = PBXGroup;
 			children = (
+				1EEAD29624DE913200C24E39 /* normal */,
+				1EEAD29324DE913200C24E39 /* SplitScreen_2 */,
+				1EEAD29C24DE913200C24E39 /* SplitScreen_3 */,
+				1EEAD29924DE913200C24E39 /* SplitScreen_4 */,
 				1EEAD28D24DE913200C24E39 /* SplitScreen_6 */,
 				1EEAD29024DE913200C24E39 /* SplitScreen_9 */,
-				1EEAD29324DE913200C24E39 /* SplitScreen_2 */,
-				1EEAD29624DE913200C24E39 /* normal */,
-				1EEAD29924DE913200C24E39 /* SplitScreen_4 */,
-				1EEAD29C24DE913200C24E39 /* SplitScreen_3 */,
 			);
 			path = Filter;
 			sourceTree = "<group>";
