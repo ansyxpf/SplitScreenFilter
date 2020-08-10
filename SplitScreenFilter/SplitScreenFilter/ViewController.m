@@ -49,6 +49,11 @@ typedef struct {
         free(_vertices);
         _vertices = nil;
     }
+    //着色器程序释放
+    if (_program) {
+        glDeleteProgram(_program);
+        _program = nil;
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -90,9 +95,9 @@ typedef struct {
 
 - (void)filterInit {
     
-    //1. 初始化上下文并设置为当前上下文
-    self.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
-    [EAGLContext setCurrentContext:self.context];
+//1. 初始化上下文并设置为当前上下文
+self.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+[EAGLContext setCurrentContext:self.context];
     
     //2.开辟顶点数组内存空间
     self.vertices = malloc(sizeof(SenceVertex) * 4);
